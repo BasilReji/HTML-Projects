@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+   background: #11131e;
+   font-family: 'Lato', sans-serif;
+   display: grid;
+}
+
+p {
+   height: 21px;
+    /* width: auto; */
+    margin: 0;
+}
+
+button {
+   border: none;
+   background: none;
+   color: dimgrey;
+   font-size: 25px;
+   outline: none;
+   cursor: pointer;
+}
+
+.calculator {
+   width: 220px;
+   height: 430px;
+   background: #434348;
+   border-radius: 25px;
+   position: absolute;
+   margin: auto;
+   top: 50%;
+   margin-top: -215px;
+   left: 50%;
+   margin-left: -110px;
+}
+
+.calculator:after {
+   position: absolute;
+   background: #fff;
+   width: 200px;
+   height: 410px;
+   content: "";
+   top: 0;
+   z-index: 1;
+   left: 50%;
+   margin-left: -100px;
+   top: 50%;
+   margin-top: -205px;
+   border-radius: 25px;
+}
+
+.calcpanel {
+   width: 100px;
+   height: 30px;
+   background: #434348;
+   z-index: 2;
+   position: relative;
+   border-radius: 0px 0px 15px 15px;
+   left: 50%;
+   margin-left: -50px;
+}
+
+.line {
+   width: 40px;
+   height: 2px;
+   background: grey;
+   position: absolute;
+   left: 50%;
+   margin-left: -20px;
+   top: 50%;
+   margin-top: -1px;
+   border-radius: 25%;
+}
+
+._buttons {
+   z-index: 9;
+   position: absolute;
+   bottom: 0;
+}
+
+._head p:nth-child(1) {
+       font-size: 20px;
+    margin-right: 4px;
+}
+
+._head {
+    z-index: 9;
+    width: 64%;
+    position: relative;
+    color: grey;
+    text-align: right;
+    top: 45px;
+    font-size: 30px;
+    margin: auto;
+}
+
+.Equal {
+   position: absolute;
+   bottom: 25px;
+   right: 30px;
+}
+
+.Equal button {
+   background: rgb(242, 126, 63);
+   color: #fff;
+   /* width: 30px; */
+   border-radius: 8px;
+   width: 40px;
+   font-size: 20px;
+   height: 40px;
+}
+
+._numbers {
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-rows: 10px 30px; */
+    width: 80%;
+    /* background-color: red; */
+    /* font-size: 80px; */
+    flex-flow: row wrap;
+    margin: auto;
+}
+
+._numbers button {
+   width: 30%;
+   height: 53px;
+   transition: all .2s ease-in-out;
+}
+
+._numbers button:hover {
+   color: rgb(242, 126, 63);
+}
+
+._operators {
+   display: flex;
+   width: 75%;
+   margin: auto;
+   justify-content: space-around;
+   /* background: red; */
+/*    color: #fff; */
+}
+
+._operators button {
+   color: #fff;
+   width: 30px;
+   /* background-color: red; */
+   color: rgb(242, 126, 63);
+   font-size: 30px;
+   height: 30px;   
+}
+
+._ACCE {
+    width: 65%;
+    /* margin: auto; */
+    /* text-align: center; */
+    position: absolute;
+    top: -25px;
+    left: 35px;
+    border-top: 1px solid #f27e3f;
+}
+
+._ACCE button {
+    font-size: 30px;
+    width: 30px;
+    color: rgb(242, 126, 63);
+    font-size: 15px;
+    height: 30px;
+}
