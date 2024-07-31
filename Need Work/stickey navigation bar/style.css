@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #262626;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+
+.nav {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 15%;
+}
+
+.logo {
+    flex: 1 1 auto;
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+a {
+    margin: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    filter: drop-shadow(2px 2px 20px rgb(255, 255, 255));
+}
+
+.banner-area {
+    position: relative;
+    background-image: url(mountain-transparent-11.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.About-area,
+.Portfolio-area,
+.Services-area,
+.contact-area {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+.text-part{
+    width: 65%;
+    height: 80%;
+}
+h1{
+    font-size: 50px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+margin-top: 40px;
+}
+p{
+    font-size: 24px;
+    line-height: 50px;
+
+}
+.About-area, .Services-area{
+    background: #fefefe;
+}
+.Portfolio-area, .contact-area{
+    background: #262626;
+    color: #fff;
+}

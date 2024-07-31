@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+body{
+  background-image: url(kishan2.jpg);
+  background-repeat: repeat;
+  background-size:content;
+}
+* { margin: 0; padding: 0;
+   box-sizing: border-box; 
+  }
+
+body { font-family: "Poppins", sans-serif; }
+
+.section-timeline { padding: 50px 20px; }
+
+.section-timeline h1 {
+  text-align: center;
+  font-size: 45px;
+  color: #ddd9d9;
+}
+
+.section-timeline .timeline {
+  padding: 100px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* the timeline middle line */
+.section-timeline .timeline::before {
+  content: "";
+  position: absolute;
+  width: 1px; height: calc(100% - 200px);
+  background-color: #393939;
+  left: 50%; transform: translateX(-50%);
+}
+
+.section-timeline .timeline .row { display: flex; }
+
+.section-timeline .timeline .row.left { justify-content: flex-start; }
+
+.section-timeline .timeline .row.right { justify-content: flex-end; }
+
+.section-timeline .timeline .row .event {
+    padding: 20px;
+    background-color: transparent;
+    color: #fdfcfc;
+    width: calc(50% - 30px);
+    position: relative;
+    box-shadow: 0 10px 20px rgba(57, 112, 255, 0.3);
+  }
+  
+  .section-timeline .timeline .row .event::before {
+    content: "";
+    position: absolute;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background-color: #3970ff;
+    top: 50%; transform: translateY(-50%);
+  }
+  
+  .section-timeline .timeline .row.left .event::before { right: -40px; }
+  .section-timeline .timeline .row.right .event::before { left: -40px; }
+  
+  .section-timeline .timeline .row .event::after {
+    content: "";
+    position: absolute;
+    width: 20px; height: 20px;
+    background-color: #3970ff;
+    top: 47%;
+    transform: rotate(45deg) translateY(-50%);
+    z-index: -1;
+  }
+  
+  .section-timeline .timeline .row.left .event::after { right: -3px; }
+  .section-timeline .timeline .row.right .event::after { left: -17px; }
+
+  .section-timeline .timeline .row .event h3 {
+    text-transform: capitalize;
+    margin-bottom: 12px;
+    font-size: 25px;
+  }
+  
+  .section-timeline .timeline .row .event p {
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .section-timeline .timeline::before { 
+      left: 20px; 
+    }
+  
+    .section-timeline .timeline .row .event {
+      width: 100%; margin-left: 50px;
+    }
+  
+    .section-timeline .timeline .row:not(:last-child) .event {
+      margin-bottom: 50px;
+    }
+  
+    .section-timeline .timeline .row.left .event::before {
+      left: -40px;
+    }
+  
+    .section-timeline .timeline .row.left .event::after {
+      left: -18px;
+    }
+  }

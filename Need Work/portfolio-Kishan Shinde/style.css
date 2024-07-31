@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar {
+    position: absolute;
+    background-color: rgb(194, 191, 191);
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    transition: transform o.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style-type: none;
+    font-size: 25px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgb(27, 26, 26);
+
+}
+
+.main {
+    /*background-color: yellow;*/
+    width: 90vw;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.info {
+    /*background-color: brown;*/
+    height: 60vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.devinfo {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.hello {
+    font-size: 3em;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+.aboutkishan {
+    font-size: 30px;
+}
+
+.aboutmore {
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    margin: 3px;
+}
+
+.btn-button {
+    margin-top: 34px;
+}
+
+.btn-button button {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.btn-button button:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+.devpic img {
+
+    height: 60vh;
+}
+
+.contactform {
+    font-family: 'Raleway', sans-serif;
+    padding-left: 40px;
+    margin: 88px 88px;
+
+}
+
+.contactform form {
+    margin: 0 40px;
+}
+
+.contactform h1 {
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+.blogcontainer {
+    margin: 88px 88px;
+}
+
+.blogitems {
+    margin: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    margin: 23px;
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+}
+
+.introme {
+    margin: 88px 88px;
+}
+
+.introme h2 {
+    font-family: 'Raleway', sans-serif;
+    margin: 12px;
+}
+
+.introme p {
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px;
+}
+
+.myskillcontainer {
+    padding: 12px;
+
+}
+
+.skillitems {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger {
+    position: absolute;
+
+}
+
+.cross {
+    margin-left: 128px;
+}
+
+@media (max-width: 1250px) {
+
+    .devpic {
+        display: none;
+    }
+
+    .intro,
+    .blogcontainer,
+    .contactform {
+        margin: 50px 8px;
+    }
+
+}

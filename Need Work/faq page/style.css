@@ -1,0 +1,151 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 50px 20px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.accordion-item {
+	margin-bottom: 20px;
+}
+
+.accordion-title {
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	padding: 10px;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.accordion-title:hover {
+	background-color: #ddd;
+}
+
+.accordion-content {
+	display: none;
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.accordion-content p {
+	margin: 0;
+}
+
+.accordion-content.active {
+	display: block;
+    
+}
+
+.faq-container {
+    background-color: #999696;
+}
+
+
+.accordion-title {
+    text-align: center;
+}
+
+.accordion-item:first-child {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    padding: 10px 0;
+}
+
+.accordion {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.accordion:last-child {
+    margin-bottom: 20px;
+}
+
+.accordion-title.active {
+    color: #fff;
+}
+
+.accordion-content.active {
+    background-color: #fff;
+}
+
+.accordion-content.active {
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+.accordion-content {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.accordion-title {
+    margin-top: 10px;
+}
+
+.accordion-title {
+    margin-bottom: 10px;
+}
+
+.accordion-title {
+    font-weight: 600;
+}
+
+.accordion {
+    border-color: #ccc;
+}
+
+.accordion-title:hover {
+    background-color: #f5f5f5;
+}
+
+.accordion-title:hover.active {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.accordion-title.active {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.accordion-item {
+    border-radius: 5px;
+}
+
+.accordion-item {
+    margin: 0 10px;
+}
+
+.accordion-item:hover {
+    background-color: #f5f5f5;
+}
+
+.accordion-title::after {
+    color: #4CAF50;
+}
+
+.accordion-title::after {
+    font-size: 18px;
+}
+
+.accordion-title::after {
+    margin-right: 10px;
+}

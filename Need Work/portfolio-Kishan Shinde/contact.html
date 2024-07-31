@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portflio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="sidebar sidebarGo">
+
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/intro.html">My Intro</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/contact.html">Contact </a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="hamburger">
+        <img class="ham" src="hamburg.png" alt="hamburgermenueimg" width="45px">
+        <img class="cross" src="cross.jpg" alt="hamburgermenueimg" width="30px">
+      </div>
+      <div class="contactform">
+        <h1>Contact Me for work, General Enquaries</h1>
+        <form>
+          <div class="mb-3">
+            <label for="Nameofclient" class="form-label">Name</label>
+            <input type="Name" class="form-control" id="Nameofclient">
+          </div>
+          <div class="mb-3">
+            <label for="clientemail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="clientphone" class="form-label">Phone</label>
+            <input type="Phone" class="form-control" id="clientphone">
+          </div>
+          <div class="mb-3">
+            <label for="Enquarytext" class="form-label">Enquary</label>
+            <input type="text" class="form-control" id="Enquarytext">
+          </div>
+          <div class="mb-3" id="form-check">
+            <input type="checkbox" class="form-check-input" id="isclient">
+            <label class="form-check-label" for="isclient">I want you to work on a Project with me</label>
+          </div>
+          <div class="btn-button" style="width: fit-content; padding: 10px 19px; margin:0; font-size: 14px;">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
